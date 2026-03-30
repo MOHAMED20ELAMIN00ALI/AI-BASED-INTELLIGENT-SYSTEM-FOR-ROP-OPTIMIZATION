@@ -11,9 +11,6 @@ from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import logging
 
-# ═══════════════════════════════════════════════════════════
-# إعداد التسجيل (Logging) - تم إصلاحه
-# ═══════════════════════════════════════════════════════════
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -22,7 +19,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("DrillingApp")
 
-# إضافة handler للملف لحفظ السجلات
+
 try:
     file_handler = logging.FileHandler("drilling_app.log", encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
@@ -40,9 +37,9 @@ ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
 
 
-# ═══════════════════════════════════════════════════════════
+
 # Constants & Configuration
-# ═══════════════════════════════════════════════════════════
+
 
 class ModelConstants:
     M_STAR_INTERCEPT = 1359.1
@@ -84,9 +81,9 @@ TABLE_1_6 = {
 }
 
 
-# ═══════════════════════════════════════════════════════════
-# Data Cleaner Class - تم إصلاح التقرير
-# ═══════════════════════════════════════════════════════════
+
+# Data Cleaner Class 
+
 
 class DataCleaner:
     def __init__(self):
@@ -322,9 +319,9 @@ class DataCleaner:
         return "\n".join(lines)
 
 
-# ═══════════════════════════════════════════════════════════
+
 # Drilling State & Model Classes
-# ═══════════════════════════════════════════════════════════
+
 
 @dataclass
 class DrillingState:
@@ -511,9 +508,9 @@ class GalleWoodsDynamicModel:
         logger.info("Model reset")
 
 
-# ═══════════════════════════════════════════════════════════
+
 # Monte Carlo Simulator
-# ═══════════════════════════════════════════════════════════
+
 
 class MonteCarloSimulator:
     def __init__(self, model):
@@ -771,9 +768,9 @@ class MonteCarloSimulator:
         return self.results
 
 
-# ═══════════════════════════════════════════════════════════
-# AI Consultant - تم تحديث ROP → dF/dT
-# ═══════════════════════════════════════════════════════════
+
+# AI Consultant 
+
 
 class AIConsultant:
     def __init__(self, model):
@@ -834,9 +831,9 @@ class AIConsultant:
         return report
 
 
-# ═══════════════════════════════════════════════════════════
+
 # UI Components
-# ═══════════════════════════════════════════════════════════
+
 
 class MetricCard(ctk.CTkFrame):
     def __init__(self, parent, title, value="--", unit="", color=COLORS["primary"], icon="📊"):
@@ -964,10 +961,8 @@ class HomePage(ctk.CTkFrame):
         return info
 
 
-# ═══════════════════════════════════════════════════════════
-# Config Frame - تم تحديث ROP → dF/dT + تقرير التنظيف
-# ═══════════════════════════════════════════════════════════
 
+# Config Frame 
 class ConfigFrame(ctk.CTkFrame):
     def __init__(self, parent, model, app=None):
         super().__init__(parent, fg_color=COLORS["light"])
@@ -1424,9 +1419,8 @@ class ConfigFrame(ctk.CTkFrame):
             return None
 
 
-# ═══════════════════════════════════════════════════════════
-# Monte Carlo Page - تم تحديث ROP → dF/dT في كل العناوين
-# ═══════════════════════════════════════════════════════════
+# Monte Carlo Page
+
 
 class MonteCarloPage(ctk.CTkFrame):
     def __init__(self, parent, model, config_frame=None):
@@ -2038,9 +2032,9 @@ class MonteCarloPage(ctk.CTkFrame):
             messagebox.showwarning("⚠️", "No results to analyze.")
 
 
-# ═══════════════════════════════════════════════════════════
+
 # Main Application
-# ═══════════════════════════════════════════════════════════
+
 
 class DrillingApp(ctk.CTk):
     def __init__(self):
@@ -2134,9 +2128,7 @@ class DrillingApp(ctk.CTk):
             self.frames[name].tkraise()
 
 
-# ═══════════════════════════════════════════════════════════
 # Entry Point
-# ═══════════════════════════════════════════════════════════
 
 if __name__ == "__main__":
     logger.info("Application starting...")
