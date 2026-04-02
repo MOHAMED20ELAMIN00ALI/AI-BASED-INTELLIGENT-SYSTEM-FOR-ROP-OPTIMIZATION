@@ -4,15 +4,15 @@
 [![University](https://img.shields.io/badge/SUST-Sudan%20University-green)](https://sust.edu.sd/)
 
 
-Welcome to the official repository of the **Intelligent Drilling Performance Optimizer**. This project represents a modern approach to Petroleum Engineering, integrating the classical **Galle-Woods** analytical model with **Advanced Pythonic Algorithms** for intelligent decision support in drilling operations.
+Welcome to the official repository of the **Intelligent Drilling Performance Optimizer**. This project represents a modern approach to Petroleum Engineering, integrating the classical **Galle-Woods** analytical model with **Advanced Python Algorithms** for intelligent decision support in drilling operations.
 
 ## 🌟 Project Overview
-This system is designed to optimize the **Rate of Penetration (dF/dT)** by analyzing real-time drilling parameters (WOB, RPM, Depth, and Time) specifically for the xxx well. The core of this research is to bridge the gap between classical Reservoir/Drilling physics and modern algorithmic optimization.
+This system is designed to optimize the **Rate of Penetration (dF/dT)** by analyzing real-time drilling parameters (WOB, RPM, Depth, and Time) specifically for the xxx well. The core of this research is to bridge the gap between classical Drilling physics and modern algorithmic optimization.
 
 ---
 
 ## 🧠 Core Intelligence: The Algorithmic Pillars
-The intelligence of this system is built into its autonomous processing layers, developed as part of the **Gali Wadouz (Galle-Woods) Simulator**:
+The intelligence of this system is built into its autonomous processing layers, developed as part of the ** (Galle-Woods) Simulator**:
 
 ### 1. Stochastic Optimization (Monte Carlo Simulation)
 A major innovation within this research is the implementation of **Monte Carlo Simulation** for **Uncertainty Modeling**. 
