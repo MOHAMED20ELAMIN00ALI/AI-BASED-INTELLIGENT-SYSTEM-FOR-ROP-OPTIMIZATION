@@ -35,7 +35,7 @@ As detailed in the **Methodology (Chapter 3)**, the system is fortified with:
 ## 🛠️ Technical Workflow & Architecture
 1. **Data Ingestion:** Importing field data via Excel using the `Pandas` engine.
 2. **Algorithmic Cleaning:** Automatic 3x IQR filtering and Median imputation.
-3. **Analytical Modeling:** Calculating `dF/dT` and `dF/dD` using derived Galle-Woods coefficients.
+3. **Analytical Modeling:** Calculating `dF/dT` and `dF/dD` using derived Galle-Woods model .
 4. **Stochastic Iteration:** Running high-speed Monte Carlo loops.
 5. **Heuristic Output:** Generating the "Top 3 Optimized Drilling Strategies."
 
