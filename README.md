@@ -1,4 +1,4 @@
-# 🤖 AI-Based Intelligent System for ROP Optimization (Algorithmic Core)
+# 🤖 AI-Based Intelligent System for wells ROP Optimization (Algorithmic Core)
 
 [![Python Version](https://img.shields.io/badge/python-3.13%2B-blue)](https://www.python.org/)
 [![University](https://img.shields.io/badge/SUST-Sudan%20University-green)](https://sust.edu.sd/)
